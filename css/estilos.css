@@ -7,7 +7,42 @@
 }
 body{
 	overflow-y: hidden;
+	color: white;
+	font-family: 'Roboto', sans-serif;
 }
+
+
+/*  Estilos Generales*/
+
+.banner{ /*contenedor de los banners*/
+		background: #8e44ad;
+		width: 594px; 
+		height: 333px;
+
+		box-shadow: #162635 -7px 4px 15px;
+}
+
+.logos{
+	width: 100%;
+	margin-top: 0;
+
+	display: flex;
+    flex-direction: row;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-evenly;
+
+	grid-column-start: 1;
+    grid-column-end: -1; 
+}
+
+
+
+/*  Fin Estilos Generales*/
+
+
+
+
 
 /* menu */
 
@@ -15,13 +50,13 @@ body{
 	position: fixed;
 	right: 0;
 	left: 0;
-	bottom: 50px;
+	bottom: 15px;
 	justify-content: center;
 }
 .nav a{
 	width: 20px;
 	height: 20px;
-	background: #718093;
+	background: #8e44ad;
 	margin: 0 20px;
 	border-radius: 50%;
 
@@ -29,12 +64,14 @@ body{
 
 /* fin menu */
 
+
+
 /* timeline */
 
 .lienzo{
 	width: 1000%;
 	height: 100vh;
-	background: #e1b12c;
+	background: #2c3e50;
 }
 .cont{
 	width: 10%;
@@ -49,7 +86,7 @@ body{
 .logo{
 	width: 300px;
 	height: 270px;
-	background: #718093;
+	background: #8e44ad;
 	margin: 55px auto;
 }
 .texto-intro{
@@ -62,22 +99,27 @@ body{
 /* sec1 */
 
 .sec1{
-	display: flex;
-	justify-content: center;
-	height: 90vh;
-	align-items: center;
-	padding: 0 50px;
+	display: grid;
+	grid-gap: 8px;
+	grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "header 		header 		header"
+                         "sidebar-1 	contenido 	sidebar-2"
+                         "sidebar-1 	widgets 	sidebar-2"
+                         "footer 		footer 		footer";
 
 }
-.sec1-logo{
-	width: 300px;
-	height: 270px;
-	background: #718093;
+
+.sec1-intro{
+	margin-top: 38px;
+	text-align: center;
 }
+
 .btn-sec1{
 	margin: 30px 70px;
 	float: right;
 }
+
 
 /* fin sec1 */
 
@@ -89,13 +131,14 @@ body{
 	height: 90vh;
 	align-items: center;
 	padding: 0 50px;
+}
 
+.sec2-intro{
+	margin-left: 30px;
+	margin-top: 132px;
 }
-.sec2-logo{
-	width: 300px;
-	height: 270px;
-	background: #718093;
-}
+
+
 .btn-sec2{
 	margin: 30px 70px;
 	float: right;
@@ -111,13 +154,14 @@ body{
 	height: 90vh;
 	align-items: center;
 	padding: 0 50px;
+}
 
+.sec3-intro{
+	margin-left: 30px;
+	margin-top: 132px;
 }
-.sec3-logo{
-	width: 300px;
-	height: 270px;
-	background: #718093;
-}
+
+
 .btn-sec3{
 	margin: 30px 70px;
 	float: right;
@@ -133,13 +177,13 @@ body{
 	height: 90vh;
 	align-items: center;
 	padding: 0 50px;
+}
 
+.sec4-intro{
+	margin-left: 30px;
+	margin-top: 132px;
 }
-.sec4-logo{
-	width: 300px;
-	height: 270px;
-	background: #718093;
-}
+
 .btn-sec4{
 	margin: 30px 70px;
 	float: right;
@@ -155,13 +199,15 @@ body{
 	height: 90vh;
 	align-items: center;
 	padding: 0 50px;
+}
 
+.sec5-intro{
+	margin-left: 30px;
+	margin-top: 132px;
 }
-.sec5-logo{
-	width: 300px;
-	height: 270px;
-	background: #718093;
-}
+
+
+
 .btn-sec5{
 	margin: 30px 70px;
 	float: right;
@@ -177,13 +223,15 @@ body{
 	height: 90vh;
 	align-items: center;
 	padding: 0 50px;
+}
 
+.sec6-intro{
+	margin-left: 30px;
+	margin-top: 132px;
 }
-.sec6-logo{
-	width: 300px;
-	height: 270px;
-	background: #718093;
-}
+
+
+
 .btn-sec6{
 	margin: 30px 70px;
 	float: right;
@@ -199,19 +247,22 @@ body{
 	height: 90vh;
 	align-items: center;
 	padding: 0 50px;
+}
 
+.sec7-intro{
+	margin-left: 30px;
+	margin-top: 132px;
 }
-.sec7-logo{
-	width: 300px;
-	height: 270px;
-	background: #718093;
-}
+
+
 .btn-sec7{
 	margin: 30px 70px;
 	float: right;
 }
 
 /* fin sec7 */
+
+
 
 /* sec8 */
 
@@ -221,19 +272,21 @@ body{
 	height: 90vh;
 	align-items: center;
 	padding: 0 50px;
+}
 
+.sec8-intro{
+	margin-left: 30px;
+	margin-top: 132px;
 }
-.sec8-logo{
-	width: 300px;
-	height: 270px;
-	background: #718093;
-}
+
 .btn-sec8{
 	margin: 30px 70px;
 	float: right;
 }
 
 /* fin sec8 */
+
+
 
 /* sec9 */
 
@@ -243,16 +296,40 @@ body{
 	height: 90vh;
 	align-items: center;
 	padding: 0 50px;
+}
 
+.sec9-intro{
+	margin-left: 30px;
+	margin-top: 132px;
 }
-.sec9-logo{
-	width: 300px;
-	height: 270px;
-	background: #718093;
-}
+
 .btn-sec9{
 	margin: 30px 70px;
 	float: right;
 }
 
 /* fin sec9 */
+
+
+
+  /*scroll*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 7<<<<px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(95, 95, 95, 0.26);
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
