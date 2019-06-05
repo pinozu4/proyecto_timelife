@@ -12,14 +12,17 @@ body{
 }
 
 
+
+
 /*  Estilos Generales*/
 
 .banner{ /*contenedor de los banners*/
 		background: #8e44ad;
 		width: 594px; 
 		height: 333px;
-
-		box-shadow: #162635 -7px 4px 15px;
+		
+		border-radius: 9px;
+		box-shadow: #020713c7 -6px 5px 17px 0px;
 }
 
 .logos{
@@ -36,7 +39,9 @@ body{
     grid-column-end: -1; 
 }
 
-
+.img{
+	border-radius: 10px !important;
+}
 
 /*  Fin Estilos Generales*/
 
@@ -56,10 +61,10 @@ body{
 .nav a{
 	width: 20px;
 	height: 20px;
-	background: #8e44ad;
+	background: #e81c1c;
 	margin: 0 20px;
 	border-radius: 50%;
-
+	box-shadow: #050d33 -2px 1px 4px 1px;
 }
 
 /* fin menu */
@@ -71,7 +76,7 @@ body{
 .lienzo{
 	width: 1000%;
 	height: 100vh;
-	background: #2c3e50;
+	background: #081b79;
 }
 .cont{
 	width: 10%;
@@ -81,6 +86,8 @@ body{
 
 /* fin timeline */
 
+
+
 /* portada */
 
 .logo{
@@ -89,12 +96,18 @@ body{
 	background: #8e44ad;
 	margin: 55px auto;
 }
+
 .texto-intro{
 	padding: 0 130px;
 	text-align: center;
+	margin-bottom: 53px;
 }
 
+
 /* fin portada */
+
+
+
 
 /* sec1 */
 
@@ -104,15 +117,15 @@ body{
 	grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, auto);
     grid-template-areas: "header 		header 		header"
-                         "sidebar-1 	contenido 	sidebar-2"
-                         "sidebar-1 	widgets 	sidebar-2"
+                         "contenido 	contenido 	contenido"
                          "footer 		footer 		footer";
-
 }
 
 .sec1-intro{
-	margin-top: 38px;
-	text-align: center;
+	margin-top: 73px;
+    text-align: justify;
+    width: 541px;
+    margin-left: 6px;
 }
 
 .btn-sec1{
@@ -126,62 +139,75 @@ body{
 /* sec2 */
 
 .sec2{
-	display: flex;
-	justify-content: center;
-	height: 90vh;
-	align-items: center;
-	padding: 0 50px;
+	display: grid;
+	grid-gap: 8px;
+	grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "header 		header 		header"
+                         "sidebar-1 	contenido 	sidebar-2"
+                         "sidebar-1 	widgets 	sidebar-2"
+                         "footer 		footer 		footer";
 }
 
 .sec2-intro{
-	margin-left: 30px;
-	margin-top: 132px;
+	margin-top: 73px;
+    text-align: justify;
+    width: 541px;
+    margin-left: 6px;
 }
-
 
 .btn-sec2{
 	margin: 30px 70px;
 	float: right;
 }
-
 /* fin sec2 */
 
-/* sec3 */
 
+/* sec3 */
 .sec3{
-	display: flex;
-	justify-content: center;
-	height: 90vh;
-	align-items: center;
-	padding: 0 50px;
+	display: grid;
+	grid-gap: 8px;
+	grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "header 		header 		header"
+                         "sidebar-1 	contenido 	sidebar-2"
+                         "sidebar-1 	widgets 	sidebar-2"
+                         "footer 		footer 		footer";
 }
 
 .sec3-intro{
-	margin-left: 30px;
-	margin-top: 132px;
+	margin-top: 73px;
+    text-align: justify;
+    width: 541px;
+    margin-left: 6px;
 }
-
 
 .btn-sec3{
 	margin: 30px 70px;
 	float: right;
 }
 
+
 /* fin sec3 */
 
 /* sec4 */
 
 .sec4{
-	display: flex;
-	justify-content: center;
-	height: 90vh;
-	align-items: center;
-	padding: 0 50px;
+	display: grid;
+	grid-gap: 8px;
+	grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "header 		header 		header"
+                         "sidebar-1 	contenido 	sidebar-2"
+                         "sidebar-1 	widgets 	sidebar-2"
+                         "footer 		footer 		footer";
 }
 
 .sec4-intro{
-	margin-left: 30px;
-	margin-top: 132px;
+	margin-top: 73px;
+    text-align: justify;
+    width: 541px;
+    margin-left: 6px;
 }
 
 .btn-sec4{
@@ -194,43 +220,50 @@ body{
 /* sec5 */
 
 .sec5{
-	display: flex;
-	justify-content: center;
-	height: 90vh;
-	align-items: center;
-	padding: 0 50px;
+	display: grid;
+	grid-gap: 8px;
+	grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "header 		header 		header"
+                         "sidebar-1 	contenido 	sidebar-2"
+                         "sidebar-1 	widgets 	sidebar-2"
+                         "footer 		footer 		footer";
 }
 
 .sec5-intro{
-	margin-left: 30px;
-	margin-top: 132px;
+	margin-top: 73px;
+    text-align: justify;
+    width: 541px;
+    margin-left: 6px;
 }
-
-
 
 .btn-sec5{
 	margin: 30px 70px;
 	float: right;
 }
 
+
 /* fin sec5 */
 
 /* sec6 */
 
 .sec6{
-	display: flex;
-	justify-content: center;
-	height: 90vh;
-	align-items: center;
-	padding: 0 50px;
+	display: grid;
+	grid-gap: 8px;
+	grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "header 		header 		header"
+                         "sidebar-1 	contenido 	sidebar-2"
+                         "sidebar-1 	widgets 	sidebar-2"
+                         "footer 		footer 		footer";
 }
 
 .sec6-intro{
-	margin-left: 30px;
-	margin-top: 132px;
+	margin-top: 73px;
+    text-align: justify;
+    width: 541px;
+    margin-left: 6px;
 }
-
-
 
 .btn-sec6{
 	margin: 30px 70px;
@@ -242,18 +275,22 @@ body{
 /* sec7 */
 
 .sec7{
-	display: flex;
-	justify-content: center;
-	height: 90vh;
-	align-items: center;
-	padding: 0 50px;
+	display: grid;
+	grid-gap: 8px;
+	grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "header 		header 		header"
+                         "sidebar-1 	contenido 	sidebar-2"
+                         "sidebar-1 	widgets 	sidebar-2"
+                         "footer 		footer 		footer";
 }
 
 .sec7-intro{
-	margin-left: 30px;
-	margin-top: 132px;
+	margin-top: 73px;
+    text-align: justify;
+    width: 541px;
+    margin-left: 6px;
 }
-
 
 .btn-sec7{
 	margin: 30px 70px;
@@ -267,16 +304,21 @@ body{
 /* sec8 */
 
 .sec8{
-	display: flex;
-	justify-content: center;
-	height: 90vh;
-	align-items: center;
-	padding: 0 50px;
+	display: grid;
+	grid-gap: 8px;
+	grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "header 		header 		header"
+                         "sidebar-1 	contenido 	sidebar-2"
+                         "sidebar-1 	widgets 	sidebar-2"
+                         "footer 		footer 		footer";
 }
 
 .sec8-intro{
-	margin-left: 30px;
-	margin-top: 132px;
+	margin-top: 73px;
+    text-align: justify;
+    width: 541px;
+    margin-left: 6px;
 }
 
 .btn-sec8{
@@ -291,16 +333,21 @@ body{
 /* sec9 */
 
 .sec9{
-	display: flex;
-	justify-content: center;
-	height: 90vh;
-	align-items: center;
-	padding: 0 50px;
+	display: grid;
+	grid-gap: 8px;
+	grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "header 		header 		header"
+                         "sidebar-1 	contenido 	sidebar-2"
+                         "sidebar-1 	widgets 	sidebar-2"
+                         "footer 		footer 		footer";
 }
 
 .sec9-intro{
-	margin-left: 30px;
-	margin-top: 132px;
+	margin-top: 73px;
+    text-align: justify;
+    width: 541px;
+    margin-left: 6px;
 }
 
 .btn-sec9{
@@ -316,7 +363,7 @@ body{
 
 /* width */
 ::-webkit-scrollbar {
-  width: 7<<<<px;
+  width: 7px;
 }
 
 /* Track */
