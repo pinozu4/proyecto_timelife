@@ -7,7 +7,7 @@
 }
 body{
 	overflow-y: hidden;
-	color: white;
+	color: #505050;
 	font-family: 'Roboto', sans-serif;
 }
 
@@ -17,12 +17,11 @@ body{
 /*  Estilos Generales*/
 
 .banner{ /*contenedor de los banners*/
-		background: #8e44ad;
 		width: 594px; 
 		height: 333px;
 		
 		border-radius: 9px;
-		box-shadow: #020713c7 -6px 5px 17px 0px;
+		box-shadow: #27272773 -1px 7px 17px 0px;
 }
 
 .logos{
@@ -37,10 +36,27 @@ body{
 
 	grid-column-start: 1;
     grid-column-end: -1; 
+        margin-bottom: 12px;
 }
 
 .img{
 	border-radius: 10px !important;
+}
+
+
+
+.btn{
+	color: #ffffff;
+    background-color: #ffb100;
+    border-color: #ffb100;
+    font-size: larger;
+}
+
+.btn:hover{
+	color: #ffffff;
+	background-color: #ffb100;
+    border-color: #ffb100;
+    box-shadow: #5a5a5ab8 0px 2px 8px 0px;
 }
 
 /*  Fin Estilos Generales*/
@@ -61,10 +77,10 @@ body{
 .nav a{
 	width: 20px;
 	height: 20px;
-	background: #e81c1c;
+	background: #fff;
 	margin: 0 20px;
 	border-radius: 50%;
-	box-shadow: #050d33 -2px 1px 4px 1px;
+	box-shadow: #2f2f2f73 -2px 1px 4px 1px;
 }
 
 /* fin menu */
@@ -76,12 +92,11 @@ body{
 .lienzo{
 	width: 1000%;
 	height: 100vh;
-	background: #081b79;
 }
 .cont{
 	width: 10%;
 	height: 100vh;
-	float: left;
+	float: left;	
 }
 
 /* fin timeline */
@@ -91,16 +106,22 @@ body{
 /* portada */
 
 .logo{
-	width: 300px;
-	height: 270px;
-	background: #8e44ad;
+	height: 225px;
+    width: auto;
 	margin: 55px auto;
+	text-align: center;
+	animation-delay: 0.7s;
 }
 
 .texto-intro{
 	padding: 0 130px;
 	text-align: center;
 	margin-bottom: 53px;
+	animation-delay: 0.7s;
+}
+.portada{
+	background: url(../img/Fondo_Inicio.jpg);
+	background-size: cover; 
 }
 
 
@@ -119,13 +140,15 @@ body{
     grid-template-areas: "header 		header 		header"
                          "contenido 	contenido 	contenido"
                          "footer 		footer 		footer";
+    background-image: url(../img/Fondo_contenido.jpg);
+    background-size: cover; 
 }
 
 .sec1-intro{
 	margin-top: 73px;
     text-align: justify;
     width: 541px;
-    margin-left: 6px;
+    margin-left: -3px;
 }
 
 .btn-sec1{
@@ -147,13 +170,15 @@ body{
                          "sidebar-1 	contenido 	sidebar-2"
                          "sidebar-1 	widgets 	sidebar-2"
                          "footer 		footer 		footer";
+    background: url(../img/Fondo_contenido.jpg);
+    background-size: cover; 
 }
 
 .sec2-intro{
 	margin-top: 73px;
     text-align: justify;
     width: 541px;
-    margin-left: 6px;
+    margin-left: -3px;
 }
 
 .btn-sec2{
@@ -173,13 +198,16 @@ body{
                          "sidebar-1 	contenido 	sidebar-2"
                          "sidebar-1 	widgets 	sidebar-2"
                          "footer 		footer 		footer";
+   	background: url(../img/Fondo_contenido.jpg);
+   	background-size: cover; 
+
 }
 
 .sec3-intro{
-	margin-top: 73px;
+	margin-top: 48px;
     text-align: justify;
     width: 541px;
-    margin-left: 6px;
+    margin-left: -3px;
 }
 
 .btn-sec3{
@@ -201,13 +229,15 @@ body{
                          "sidebar-1 	contenido 	sidebar-2"
                          "sidebar-1 	widgets 	sidebar-2"
                          "footer 		footer 		footer";
+    background: url(../img/Fondo_contenido.jpg);
+    background-size: cover; 
 }
 
 .sec4-intro{
 	margin-top: 73px;
     text-align: justify;
     width: 541px;
-    margin-left: 6px;
+    margin-left: -3px;
 }
 
 .btn-sec4{
@@ -228,13 +258,16 @@ body{
                          "sidebar-1 	contenido 	sidebar-2"
                          "sidebar-1 	widgets 	sidebar-2"
                          "footer 		footer 		footer";
+    background: url(../img/Fondo_contenido.jpg);
+    background-size: cover; 
+
 }
 
 .sec5-intro{
 	margin-top: 73px;
     text-align: justify;
     width: 541px;
-    margin-left: 6px;
+    margin-left: -3px;
 }
 
 .btn-sec5{
@@ -256,13 +289,15 @@ body{
                          "sidebar-1 	contenido 	sidebar-2"
                          "sidebar-1 	widgets 	sidebar-2"
                          "footer 		footer 		footer";
+	background: url(../img/Fondo_contenido.jpg);
+	background-size: cover; 
 }
 
 .sec6-intro{
 	margin-top: 73px;
     text-align: justify;
     width: 541px;
-    margin-left: 6px;
+    margin-left: -3px;
 }
 
 .btn-sec6{
@@ -283,13 +318,15 @@ body{
                          "sidebar-1 	contenido 	sidebar-2"
                          "sidebar-1 	widgets 	sidebar-2"
                          "footer 		footer 		footer";
+    background: url(../img/Fondo_contenido.jpg);
+    background-size: cover; 
 }
 
 .sec7-intro{
 	margin-top: 73px;
     text-align: justify;
     width: 541px;
-    margin-left: 6px;
+   margin-left: -3px;
 }
 
 .btn-sec7{
@@ -312,13 +349,15 @@ body{
                          "sidebar-1 	contenido 	sidebar-2"
                          "sidebar-1 	widgets 	sidebar-2"
                          "footer 		footer 		footer";
+    background: url(../img/Fondo_contenido.jpg);
+    background-size: cover; 
 }
 
 .sec8-intro{
 	margin-top: 73px;
     text-align: justify;
     width: 541px;
-    margin-left: 6px;
+    margin-left: -3px;
 }
 
 .btn-sec8{
@@ -341,13 +380,15 @@ body{
                          "sidebar-1 	contenido 	sidebar-2"
                          "sidebar-1 	widgets 	sidebar-2"
                          "footer 		footer 		footer";
+    background: url(../img/Fondo_contenido.jpg);
+    background-size: cover; 
 }
 
 .sec9-intro{
 	margin-top: 73px;
     text-align: justify;
     width: 541px;
-    margin-left: 6px;
+    margin-left: -3px;
 }
 
 .btn-sec9{
@@ -361,22 +402,28 @@ body{
 
   /*scroll*/
 
-/* width */
+
+  ::-webkit-scrollbar {
+    display: none;
+}
+
+/* width 
 ::-webkit-scrollbar {
   width: 7px;
-}
+}*/
 
-/* Track */
+/* Track 
 ::-webkit-scrollbar-track {
   background: rgba(95, 95, 95, 0.26);
-}
+}*/
  
-/* Handle */
+/* Handle 
 ::-webkit-scrollbar-thumb {
   background: #888; 
-}
+}*/
 
-/* Handle on hover */
+/* Handle on hover 
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
 }
+*/
