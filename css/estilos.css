@@ -81,6 +81,40 @@ body{
 	margin: 0 20px;
 	border-radius: 50%;
 	box-shadow: #2f2f2f73 -2px 1px 4px 1px;
+    position: relative;;
+}
+
+.active{
+    box-shadow: 0 0 20px white;
+    animation: 1s palpitar infinite;
+}
+@keyframes palpitar{
+    0%{
+        box-shadow: 0 0 20px white;
+    }
+    50%{
+        box-shadow: 0 0 0px white;
+    }
+    100%{
+        box-shadow: 0 0 20px white;
+    }
+}
+
+.cuadro{
+    width: 115px;
+    height: 30px;
+    background: white;
+    position: absolute;
+    left: -45px;
+    top: -40px;
+    border-radius: 20px;
+    display: none;
+}
+.cuadro h4{
+    padding: 5px 0;
+    font-size: 15px;
+    color: red;
+    text-align: center;
 }
 
 /* fin menu */
