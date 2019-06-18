@@ -100,22 +100,24 @@ body{
     }
 }
 
-.cuadro{
-    width: 115px;
-    height: 30px;
-    background: white;
-    position: absolute;
-    left: -45px;
-    top: -40px;
-    border-radius: 20px;
-    display: none;
-}
-.cuadro h4{
-    padding: 5px 0;
-    font-size: 15px;
-    color: red;
-    text-align: center;
-}
+    /* LightBox */
+
+    .cuadro{
+        width: 115px;
+        height: 30px;
+        background: white;
+        position: absolute;
+        left: -45px;
+        top: -40px;
+        border-radius: 20px;
+        display: none;
+    }
+    .cuadro h4{
+        padding: 5px 0;
+        font-size: 15px;
+        color: #505050;
+        text-align: center;
+    }
 
 /* fin menu */
 
