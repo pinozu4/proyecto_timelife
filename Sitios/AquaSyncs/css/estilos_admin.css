@@ -1,0 +1,236 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: #0c8dd0;
+	background-image: url(../img/texture.png);
+}
+
+.contenedor{
+	display: grid;
+	grid-gap: 13px;
+	grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+}
+
+
+
+
+
+header{
+	width: 100%;
+	height: 16vh;
+	background-color: #79d1ff;
+	box-shadow:  1px 1px 10px #0c73a9;
+	padding: 10px;
+	overflow: hidden;
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+
+	display: flex;
+    flex-direction: row;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-evenly;
+
+    grid-column-start: 1;
+    grid-column-end: -1; 
+}
+
+.imagenLogo{
+	width: 	97px;
+}
+
+
+
+
+nav{
+	width: 100%;
+	background-color:#79d1ff;
+	box-shadow: 1px 13px 10px 0px #0c73a9;
+	color: #0c8dd0;
+	padding: 10px;
+	text-align: center;
+	border-top-right-radius: 4px; 
+	border-bottom-right-radius: 4px; 
+
+
+	grid-column: span 1; 
+}
+
+nav li{
+	background-color: #79d1ff !important;
+}
+
+.lista a{
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+}
+
+.lista a:hover{
+	color: #d34242;
+	transition: 0.26s;
+}
+
+nav ul h2 a:hover{
+	color: #d34242;
+	text-decoration: none;
+	transition: 0.26s;
+}
+
+
+
+
+
+section{
+  	width: 100%;
+  	min-height: 70vh;
+  	background-color: white;
+  	border-top-left-radius: 4px; 
+	border-bottom-left-radius: 4px;
+	box-shadow: 1px 13px 10px 0px #0c73a9; 
+	padding: 15px;
+	color: #00a7ff;
+	font-family: 'Montserrat', sans-serif;
+
+  	grid-column: span 3; 
+}
+
+
+
+
+
+
+
+
+
+.salir{
+	background-color:  #d34242; 
+}
+
+.salir a{
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.salir:hover{
+	background-color:  #e41c1c;
+}
+
+.salir a:hover{
+	text-decoration: none !important;
+}
+
+.list-group-item {
+    padding: 0.9em 1.25rem !important;
+
+}
+
+.table td, .table th {
+     border-top: none; 
+
+}
+
+
+
+
+
+
+
+
+
+/*    estilos Login*/
+
+
+
+.bodyLogin{
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.form-box{
+	width: 400px;
+    padding: 40px;
+    background-color: #00a7ff;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: #00669cd6 -2px 7px 7px 3px;
+    margin-top: 125px;
+}
+
+.form-title {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.form-box input[type="text"],
+.form-box input[type="password"]
+ {
+    border: 0;
+    background: #fff;
+    display: block;
+    margin: 20px auto;
+    padding: 14px 10px;
+    text-align: center;
+    border: 2px solid #0b7fbc;
+    width: 200px;
+    outline: none;
+    color: #00a7ff;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+
+.form-box button[type="submit"]{
+	border: 0;
+    background: #fff;
+    display: block;
+    margin: 20px auto;
+    padding: 14px 10px;
+    text-align: center;
+    border: 2px solid #0b7fbc;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+
+.form-box input[type="text"]:focus,
+.form-box input[type="password"]:focus {
+    width: 280px;
+    color: #00a7ff;
+    border-color: #0b7fbc;
+}
+
+.form-box button[type="submit"] {
+    border: 0px;
+    background: #0b7fbc;
+    cursor: pointer;
+}
+
+.form-box button[type="submit"]:hover {
+    border: 2px solid #0b7fbc;
+    background: none;
+    animation: exit;
+    animation-direction: 3s;
+}
+
+
+
+
+
+
+
+
+
+

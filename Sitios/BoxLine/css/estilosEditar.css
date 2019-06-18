@@ -1,0 +1,62 @@
+*{
+  border: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+body{
+  background: rgba(223, 226, 229, 1.0);
+  font-family: 'Raleway light' ;
+}
+
+.menu{
+  width: 100%;
+  height: 100px;
+}
+
+.fondo{
+  background: rgb(60, 88, 162);
+  background-size: cover;
+}
+
+.jum{
+  margin: 100px auto;
+  width: 55%;
+  background: rgb(60, 88, 162);
+  border-radius: 10px;
+  border: 1px solid white;
+  box-shadow:  6px 4px 6px 0px rgba(0,0,0,0.39);
+}
+
+h3{
+  color: white;
+  text-align: center;
+  margin-top: 2%;
+  font-family: 'GROBOLD';
+}
+
+hr{
+  background: white;
+  width: 14%;
+  margin: 0 auto;
+}
+
+.lab{
+  color: white;
+}
+
+.nav-tabs{
+  border-bottom: 1.5px solid white;
+}
+
+.btnEC{
+  margin-top: 5%;
+}
+
+.btnCU{
+  margin: 2% 2% 2% 2%;
+}
+
+a:not([href]):not([tabindex]){
+  color: white;
+}

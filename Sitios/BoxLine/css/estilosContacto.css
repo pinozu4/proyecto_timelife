@@ -1,0 +1,54 @@
+body{
+	background-image: url(../img/fondoFormularios.png);
+	background-size: 100%;
+	font-family: 'Raleway light';
+}
+
+h3{
+	color: white;
+	text-align: center;
+	font-family: 'GROBOLD';
+}
+
+hr{
+	background: white;
+	width: 33%;
+}
+.jumbotron{
+	background-color: rgb(60, 88, 162);
+	margin: 5% auto;
+	border-radius: 10px;
+	border: 1px solid white;
+	box-shadow:  6px 4px 6px 0px rgba(0,0,0,0.39);
+}
+
+input{
+	margin-bottom:  10px;
+}
+.botones{
+	width: 70%;
+	margin: 0 auto;
+}
+.cancelar{
+	margin: 5px;
+	width: 47%;
+}
+
+.enviar{
+	margin: 5px;
+	width: 47%;
+}
+.enviar img{
+	width: 100%;
+}
+.cancelar img{
+	width: 100%;
+}
+textarea{
+	min-height: 132px; 
+	max-height: 132px;
+}
+
+a:not([href]):not([tabindex]){
+  color: white;
+}

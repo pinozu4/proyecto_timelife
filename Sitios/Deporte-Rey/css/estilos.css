@@ -1,0 +1,566 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: none;
+	text-decoration: none !important;
+	list-style: none; 
+}
+/*COLORES:
+Azul:#00507d
+Azul claro:#00c7dc
+Rojo:#ff6666
+Verde:#33cc65
+Verde2: #1abc9c;
+*/
+/*Fuentes:*/
+@font-face{
+	src: url('../fonts/impact.ttf');
+	font-family: 'impact';
+}
+@font-face{
+	src: url('../fonts/agency-fb_[allfont.es]_0.ttf');
+	font-family: 'agency';
+}
+@font-face{
+	src: url('../fonts/CaviarDreams.ttf');
+	font-family: 'caviar';
+}
+/*Colores del Menu*/
+.Menu ul li:first-child:hover{
+	background:#00c7dc;	
+}
+.Menu ul li:nth-child(2):hover{
+	background:#00507d;	
+}
+.Menu ul li:nth-child(3):hover{
+	background:#33cc65;	
+}
+.Menu ul li:nth-child(4):hover{
+	background:#ff6666;	
+}
+.Menu ul li:nth-child(5):hover{
+	background:#1abc9c;	
+}
+.Menu ul li:nth-child(6):hover{
+	background: #1abc9c;
+}
+.Menu ul li:nth-child(7):hover{
+	background:#00507d;	
+}
+
+/*Estilos*/
+body{
+	overflow: hidden; 
+}
+/* .cargando{
+	width: 100vw;
+	height: 100vh;
+	background: white;
+	position: fixed;
+	z-index: 999;
+	display: flex;
+	justify-content: center;
+}
+.gif{
+	margin-top: 20%;
+	position: fixed;
+} */
+
+#cargando {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: 1000;
+background: #FFF none repeat scroll 0% 0%;
+z-index: 99999;
+}
+#cargando .cargandoin {
+	display: block;
+	position: relative;
+	left: 50%;
+	top: 50%;
+	margin: -75px 0 0 -75px;
+}
+html{
+	scroll-behavior: smooth;
+}
+/* Estilos Menu */
+.Menu{
+	width: 50%;
+	background: rgb(0,0,0, 0.6);
+	border-radius: 10px;
+	position: fixed;
+	z-index: 19;
+	transform: translateX(1000%);
+	text-align:  center;
+	transition: ease-in-out .3s;
+}
+.activar{
+	transform: translateX(100%);
+}
+.Menu ul li a{
+	padding: 3px;
+	color: white;
+	font-size: 2em;
+	font-family: 'impact', sans-serif;
+}
+/* Estilos Maquetación general */
+.contGeneral{
+	width: 1500%;
+	height: 100vh;
+	display: flex;
+	flex-direction: row;
+	overflow-y: hidden;
+}
+.IconMenu{
+	position: fixed;
+	z-index: 20;
+	top: 20px;
+	right: 50px;
+	cursor: pointer;
+}
+.logo_esquina{
+	position: fixed;
+	z-index: 20;
+	top: 20px;
+	left: 50px;
+	display: none;
+}
+/* Inicio */
+.Inicio{
+	width: 100vw;
+	background: #00c7dc;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+.Iconos{
+	font-size: 2em;
+	color: white;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	position: fixed;
+	z-index: 999;
+	right: 50px;
+	bottom: 20px;
+}
+.logo{
+	margin: auto;
+}
+.boton{
+	width: 310px;
+	height: 55px;
+	border-radius: 10px 10px 10px 10px;
+	background: #00507d;
+	margin: auto;
+	text-align: center;
+}
+.boton a{
+	font-size: 2.2em;
+	color: white !important;
+	cursor: pointer;
+	font-family: 'impact' , sans-serif;
+}
+/* Origen */
+.Origen{
+	width: 100vw;
+}
+.Info{
+	z-index: 999;
+	width: 60%;
+	margin: auto;
+	margin-top: 10%; 
+	justify-content: space-evenly;
+}
+.Carlos{
+	margin: 0;
+}
+.Intro{
+	background: rgb(0, 0, 0, 0.3);
+	border-radius: 10px;
+	width: 70%;
+	padding: 2%;
+}
+h2{
+	font-size: 3em;
+	color: white;
+	font-family: 'impact', sans-serif;
+}
+h3{
+	font-size: 1.5em;
+	color: black;
+	font-family: 'caviar', sans-serif;
+}
+p{
+	font-family: 'caviar', sans-serif;
+	font-size: 1.3em;
+	line-height: 1.2;
+	color: white;
+	font-weight: 400;
+	text-align: justify;
+}
+/* Mayas */
+.mayas{
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+}
+/* #animacion{
+	width: 50%;
+	height: auto;
+} */
+.Section1{
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+}
+.Titulo{
+	text-align: center;
+	font-size: 65pt;
+	color: white;
+	font-family: 'agency fb', sans-serif;
+	margin-top: 3%;
+}
+.tltFif{
+		-webkit-text-stroke:2px grey;
+}
+.contSubsec{
+	width:40%;
+	margin: auto;
+	justify-content: space-between;
+}
+.btnModal{
+	width: 45px;
+	height: 45px;
+	background: white;
+	border-radius: 100%;
+	box-shadow: 0px 0px 0px 5px rgba(255,255,255,0.5);
+	animation: Sombra 2s ease-out;
+	animation-iteration-count: infinite;
+}
+.contSubsec2{
+	width:60%;
+	margin: auto;
+	justify-content: center;
+}
+.Richard{
+	width: 90%;
+}
+/* Evolución */
+.Evolucion{
+	width: 100vw;
+}
+.Section2{
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+#Tn{
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+.copa{
+	width: 100vw;
+	background: #33cc65;
+	display: flex;
+	flex-direction: column;	
+}
+.contcm{
+	width: 60%;
+	margin: auto;
+	justify-content: center;
+}
+#Video{
+	width: 100%;
+	margin-top: 1%;
+	height: 80%;
+}
+.rep{
+	margin-bottom: 4%;
+	font-family: 'impact', sans-serif;
+}
+.JuegosOlimpicos{
+	width: 100vw;
+}
+.Intro2{
+	background: rgb(0,0,0, 0.3);
+	padding: 2%;
+	border-radius: 10px;
+	width: 75%;
+}
+.Section3{ 
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+.Actualidad{
+	width: 100vw;
+}
+@keyframes Sombra{
+	0%{
+		box-shadow: 0px 0px 0px 0px rgba(255,255,255,0);
+	}
+	30%{
+		box-shadow: 0px 0px 0px 5px rgba(255,255,255,0.3);
+	}
+	40%{
+		box-shadow: 0px 0px 0px 10px rgba(255,255,255,0.3);
+	}
+	60%{
+		box-shadow: 0px 0px 0px 15px rgba(255,255,255,0);
+	}
+	100%{
+		box-shadow: 0px 0px 0px 15px rgba(255,255,255,0);
+	}
+}
+.jugar{
+	display: none;
+	position: fixed;
+	z-index: 19;
+	right: 50px;
+	bottom: 20%;
+	font-size: 2em;
+	font-family: 'agency', sans-serif;
+	box-shadow: 0px 0px 0px 5px rgba(255,255,255,0.5);
+	animation: Sombra 2s ease-out;
+	animation-iteration-count: infinite;
+}
+.ra{
+	display: none;
+	position: fixed;
+	z-index: 19;
+	right: 50px;
+	bottom: 35%;
+	font-size: 1.8em;
+	font-family: 'agency', sans-serif;
+	box-shadow: 0px 0px 0px 5px rgba(255,255,255,0.5);
+	animation: Sombra 2s ease-out;
+	animation-iteration-count: infinite;
+}
+.Juego{
+	width: 100vw;
+	background: #00507d;
+	text-align: center;
+}
+.ContJuego{
+	width: 100%;
+	height: 100vh;
+	margin: auto;
+	padding-top: 2%;
+}
+.codJuego{
+	width: 80%;
+	height: 80%;
+	margin:auto;
+	margin-top: 1%; 
+	background: black;
+	border-radius: 10px;
+}
+.volver{
+	font-size: 1.5em;
+	font-family: 'agency' , sans-serif;
+}
+.RAu{
+	width: 100vw;
+	background: #1abc9c;
+}
+/* Barra */
+.barra{
+	width: 100vw;
+	position: fixed;
+	z-index: 2;
+	left: 10%;
+	top: 93%;
+	display: none;
+}
+.cuadro{
+	width: 80%;
+	border: solid 2.5px #00c7dc;
+	border-radius: 30px;
+	padding: 5px;
+}
+.carga{
+	background: #bdc3c7;
+	width: 10px;
+	height: 10px;
+	border-radius: 30px; 
+	transition: 1s;
+}
+.secciones{
+	width: 20px;
+	height: 20px;
+	border-radius: 100%;
+	background: white;
+	top: 2.5px;
+	box-shadow: 0px 0px 0px 5px rgba(255,255,255,0.5);
+	animation: Sombra 2s ease-out;
+	animation-iteration-count: infinite;
+	cursor: pointer;
+}
+.Subsecciones{
+	width: 15px;
+	height: 15px;
+	border-radius: 100%;
+	background: white;
+	top: 5px;
+	cursor: pointer;
+}
+.btn1{
+	position: absolute;
+	left:0.3%;
+}
+.btn2{
+	position: absolute;
+	left:8%;
+}
+.btn3{
+	position: absolute;
+	left:15%;
+}
+.btn4{
+	position: absolute;
+	left:22%;
+}
+.btn5{
+	position: absolute;
+	left:29%;
+}
+.btn6{
+	position: absolute;
+	left:36%;
+}
+.btn7{
+	position: absolute;
+	left:43%;
+}
+.btn8{
+	position: absolute;
+	left:50%;
+}
+.btn9{
+	position: absolute;
+	left:57%;
+}
+.btn10{
+	position: absolute;
+	left:64%;
+}
+.btn11{
+	position: absolute;
+	left:71%;
+}
+.btn12{
+	position: absolute;
+	left:78.2%;
+}
+/* Estilos Login */
+.ContGeneralLog{
+	background: #00507d;
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+}
+.Login{
+	width: 50%;
+	margin: auto;
+	margin-top: 60px;
+	text-align: center;
+	box-shadow: -4px 2px 20px 0 black;
+	background: #00c7dc; 
+}
+.FormInputLog{
+	width: 50%;
+	margin: auto;
+	border: solid 0;
+	box-shadow: none !important;
+}
+.TituloLog{
+	font-family: 'impact', sans-serif;
+	font-size: 1.5em;
+	text-align: center;
+}
+.Titulo2Log{
+	font-family: 'agency',sans-serif;
+	font-size: 1.5em;
+	text-align: center;
+}
+/* Estilos Usuarios */
+.ContGeneralUser{
+	height: 100vh;
+	background: #00c7dc;
+}
+.TitulosUser{
+	font-family: 'impact',sans-serif;
+	color: white;
+	text-align: center;
+}
+.navUser{
+	height: 15%;
+	position: relative;
+}
+.logo_esquinaUser{
+	position: absolute;
+	top: 20px;
+	left: 50px;
+}
+.CerrarUser{
+	position: absolute;
+	top: 40px;
+	right: 50px;
+}
+/* Estilos EditarUser */
+.ContGeneralEdit{
+	background: #00507d;
+	width: 100%;
+	height: 100vh;
+}
+.Edit{
+	width: 50%;
+	margin: auto;
+	text-align: center;
+	box-shadow: -4px 2px 20px 0 black;
+	background: #00c7dc; 
+}
+.ContCenter{
+	margin: auto;
+	text-align: center;
+}
+/* Estilos Admin */
+.seleccionar{
+	margin: 70px;
+	background-color: #00507d;
+	color: white;
+	border-radius: 10px 10px 10px 10px;
+	font-size: 15pt;
+	text-align: center;
+}
+.seleccionar:hover{
+	background-color: #ff6666;
+}
+.PAdmin{
+	font-family: "impact", sans-serif;
+}
+.IconosAdmin{
+	padding-top: 10px;
+	font-size: 120pt;
+}
+.ContAdmin{
+	margin: 0;
+}
+.Mensaje{
+	margin:auto;
+	text-align: center;
+	font-family: Caviar, sans-serif;
+	font-weight: bold;
+	color: red;
+	font-size: 1.5em;
+}
+

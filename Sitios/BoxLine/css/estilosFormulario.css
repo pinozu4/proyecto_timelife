@@ -1,0 +1,112 @@
+*{
+	text-decoration: none;
+}
+body{
+	background-image: url(../img/fondoFormularios.png);
+	background-size: 100%;
+	overflow: hidden;
+	font-family: 'Raleway light';
+}
+body td{
+	background-color: rgb(60, 88, 162);
+	color: white;
+}
+
+body th{
+	color: white;
+}
+/* estilos login */
+
+.padreLogin{
+	margin: 10%;
+}
+.DatosIncorrectos{
+	color: white;
+}
+
+.login{
+	width: 50%;
+	height: 57vh;
+	margin:  0 auto;
+	box-shadow: 4px 4px #7f8c8d;
+	background-color: rgb(60, 88, 162);
+}
+
+.login h2{
+	text-align: center;
+	color: white;
+}
+
+.login label{
+	color: white;
+}
+
+.enviar{
+	margin-bottom: 1%;
+}
+
+.cancelar{
+	text-decoration: none;
+	color: white;
+}
+
+/* clases registro*/
+
+.padreRegistro{
+	margin: 10% 0; 
+}
+.DatosRepetidos{
+	color: red;
+}
+
+.registro{
+	width: 50%;
+	margin: 0 auto;
+	box-shadow: 6px 4px 6px 0px rgba(0,0,0,0.39);
+	background-color: rgb(60, 88, 162);
+}
+
+.registro h2{
+	text-align: center;
+	color: white;
+}
+
+.registro label{
+	color: white;
+}
+
+.registrarse{
+	margin-bottom: 1%;
+}
+
+.cancelar{
+	text-decoration: none;
+	color: white;
+}
+
+.form-group p{
+	color: white;
+}
+
+hr{
+	width: 21%;
+}
+.botones{
+	width: 70%;
+	margin: 0 auto;
+}
+.btnR img{
+	margin: 5px;
+	width: 45%;
+}
+.btnC img{
+	margin: 5px;
+	width: 45%;
+}
+
+/* clases lista usuarios*/
+
+.ListaUsuarios{
+	margin: 0 auto;
+	background-color: rgb(60, 88, 162);
+}
